@@ -1,0 +1,27 @@
+{
+  "name": "recipe-server",
+  "version": "1.0.0",
+  "description": "Server for posting and getting recipes from the db",
+  "main": "index.js",
+  "engines": {
+    "node": "6.11.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmoconnor23/recipe-server"
+  },
+  "keywords": [
+    "server",
+    "recipe",
+    "family"
+  ],
+  "author": "mmoconnor23",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
