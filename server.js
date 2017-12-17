@@ -4,6 +4,9 @@ const app = express();
 
 app.post('/addrecipe', (req, res) => {
   console.log('hit a route', req, res);
+  res.addHeader('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+  res.send('melissa');
 });
 
 const port = process.env.PORT || 8081;
