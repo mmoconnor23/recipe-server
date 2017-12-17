@@ -2,7 +2,7 @@ import * as express from 'express';
 
 const app = express();
 
-app.post('/addrecipe', (req, res) => {
+app.all('/addrecipe', (req, res) => {
   console.log('hit a route', req, res);
   res.addHeader('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'X-Requested-With');
